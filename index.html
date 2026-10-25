@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="spending spending"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#181d1b"><meta name="description" content="spending spending: a calm personal record of where your money goes."><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEPklEQVR4nO3d0W3bQBRE0XXgIgIE+XMvaSOlpY30kmLyQYAgJI9MccXdmcd7voP4cXm5pCXBevv+80cDPvNt9gDwRRyQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKA9D57gJn+/PrY889+//139iSe3i7156131vDYdVqpH8dLglBqh1I5jlOz2KqaSME4hjVxr1glpeKYmMVWmUSKxGGSxVaBRCq8zmFYRnOd6inZO0fECcjdQoJ3jogyWs6c91LjyFrxrGlXebeV0IVeZN1iwnaO6DJa2vxJcWStrBJ0FDFxBK3pl1KOJSOOlNXcL+KIAh5I576teuU3dd3jOOPcHD4lVsMMcKFPgvWfhvV/iLgp9LPeOV51Dk66Os3H6+cbR8pH+lLmPMA0jv4VH7zccQPvkfGr7LPGL7Thqe3nGEfnVTjrPHX+XMOHXLvbSs8amVy+BQ5h4bhzHOOzrD6TdPKK4/A153Y+rF5nO8wrDlgxiqPMtrEosHkYxXGMZxkL59n2yI7Df/X9J3zAJQ6fvdSByWq4xHFAykWZMuc9izhMLhQrDmtiEccBWZdj1rSr1DgwQGQciRdi4szz43C4uXqavjLz44CtvDgS9+dF3OR5cWAY4oA0OY7pz1zm5q5P2M4Rd9u+kTV/WBwYiTggEQck4oBEHJCIAxJxQCIOSMQBiTgghcWR/l5M1vyT48h6r2G8uesTtnNgJOKAlBdH1m17K27yvDgwzPw4eCZVpq/M/DgOiNufW+bMkXFgjNQ4si7ErGlXFnFMv7kaclgTiziOSbkcU+a85xKHw4Xiw2Q1XOI4xv+i9J/wgew4mvfqO8+2h1EcBf6q61aBv7lrFAfceMVRZvMosG00tzh6+PThM0knuy/jabHf1NSSJ/+U484R+n1YxcponnH0G99HmVvJluNtZZHyfa0pcx7gG0ez/8pn8/H6WcfRXrpdv/AceE71cu+zBxhnPaNlXk05m/vO0U4+JV+GMvenzxUQRyt6yZqX0VJ+lfVfx2dFHFFGHC1kNXdKOZaYOFrOmj4WdBRJcbSolf1U1vwZD6T34h5Rs7JYhO0cq6y1zpp2lRpHy1nxlDnvpd5WtmxvMblZLIJ3jpXnOfCc6ikVdo6VyRZSIItFqTgWExMpk8WiYByrYZUUa2JVOY7Fld9W7VQ/jq3CH+k7w7XiuLGzlevUcOPSceCxCq9z4CTEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUD6D+ghJ8DyrMzRAAAAAElFTkSuQmCC"><title>spending spending</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f3ef;--side:#fafaf8;--fg:#181d1b;--mute:#7a7d78;--line:#dcdcd6;--fill:#e5e5df;--ac:#E3433A;--dk:#181d1b;--up:#E3433A;--dn:#4E9A4A;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121513;--side:#181c1a;--fg:#f1f1ec;--mute:#9a9d97;--line:#2b302d;--fill:#262b28;--dk:#222823}}
+:root[data-theme="dark"]{--bg:#121513;--side:#181c1a;--fg:#f1f1ec;--mute:#9a9d97;--line:#2b302d;--fill:#262b28;--dk:#222823}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 "DM Sans",-apple-system,"Helvetica Neue",Arial,sans-serif}
+button,select,input{font:inherit;color:inherit}
+aside{display:none}main{max-width:1000px;margin:0 auto;padding:28px 20px 130px}
+.brand{letter-spacing:.3em;font-weight:700;font-size:14px}main>.brand{margin-bottom:36px}
+.eye{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:700}
+h1{font-size:40px;line-height:1.1;margin:8px 0 14px;letter-spacing:-.03em}h2{font-size:24px;margin:4px 0 0;letter-spacing:-.02em}
+.sub{color:var(--mute);max-width:520px}.sec{margin-top:56px}.hd{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.note{color:var(--mute);font-size:13px}.pill{background:var(--fill);border:0;border-radius:12px;padding:11px 14px;font-weight:600;font-size:14px;cursor:pointer;max-width:100%}
+.today{background:var(--dk);color:#f5f5f0;border-radius:24px;padding:28px;margin-top:24px;box-shadow:0 20px 40px -20px rgba(0,0,0,.4)}
+.today .eye{color:#aab0ab}.today .n{font-size:44px;font-weight:700;letter-spacing:-.04em;margin:10px 0 2px;line-height:1.1}.today p{margin:0;color:#aab0ab}
+.add{background:var(--ac);color:#fff;border:0;border-radius:12px;padding:13px 22px;font-weight:700;cursor:pointer;margin-top:22px;width:100%}
+.split{display:grid;gap:28px;align-items:center;margin-top:24px}.leg .r{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}.leg .r:last-child{border:0}.leg b{font-weight:700}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:12px}
+.tx{display:flex;align-items:center;gap:14px;padding:15px 0;border-top:1px solid var(--line);cursor:pointer}.tx>i{width:6px;height:36px;border-radius:3px;flex:none}
+.tx .m{flex:1;min-width:0;display:flex;flex-direction:column}.tx .m span,.tx .r span{font-size:13px;color:var(--mute)}.tx .r{text-align:right;display:flex;flex-direction:column;white-space:nowrap}
+.tx svg{display:none;color:var(--mute)}.list{border-bottom:1px solid var(--line)}
+.search{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}.search input{flex:1;min-width:200px;background:var(--fill);border:0;border-radius:12px;padding:12px 16px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:16px 0 4px;scrollbar-width:none}.chip{white-space:nowrap;border:1px solid var(--line);background:none;border-radius:99px;padding:6px 14px;cursor:pointer;font-size:12px;font-weight:600}.chip.on{background:var(--dk);color:#fff;border-color:var(--dk)}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:28px}.strip>div{padding:18px 18px 18px 0}.strip .eye{font-size:10px}.strip b{display:block;font-size:20px;margin-top:6px}.strip span{font-size:12px;color:var(--mute)}
+.bars{display:flex;align-items:flex-end;gap:6px;height:230px;margin-top:28px;border-bottom:1px solid var(--line)}.bars>div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:9px;color:var(--mute);gap:4px}.bars i{width:100%;max-width:32px;background:#6C8FB0;border-radius:6px 6px 2px 2px;min-height:4px}
+.ov{background:var(--fill);border-radius:16px;padding:16px 20px;display:flex;justify-content:space-between;margin-top:20px;font-weight:700;align-items:center;flex-wrap:wrap;gap:6px}.ov span{font-weight:400;color:var(--mute);font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:14px}td,th{padding:12px 6px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:500;font-size:11px}td:first-child,th:first-child{text-align:left;white-space:normal}.up{color:var(--up)}.dn{color:var(--dn)}
+.pat{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:20px}.pat>div{padding:20px 22px;border-right:1px solid var(--line)}.pat small{display:block;color:var(--mute);font-size:12px;margin:2px 0 14px}.pat b.v{font-size:22px}
+.mr{display:flex;justify-content:space-between;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line);cursor:pointer;font-weight:700;font-size:14px}.mr svg{color:var(--mute)}
+.body{padding:8px 4px 20px;color:var(--mute);font-size:13px}.body b{color:var(--fg)}.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:4px 32px}.cg p{margin:10px 0}
+.btn{background:none;border:1px solid var(--line);border-radius:10px;padding:9px 14px;font-weight:700;font-size:13px;cursor:pointer;margin:8px 8px 0 0}.btn.dk{background:var(--dk);color:#fff;border-color:var(--dk)}
+.field{background:var(--side);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;width:100%}.tag{display:inline-block;background:var(--fill);color:var(--fg);border-radius:99px;padding:4px 10px;font-size:12px;margin:6px 6px 0 0}.tag u{cursor:pointer;text-decoration:none;margin-left:6px;color:var(--mute)}
+nav.pill2{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--side);border-radius:24px;box-shadow:0 8px 30px rgba(0,0,0,.15);border:1px solid var(--line);display:flex;padding:8px;z-index:5}
+nav button{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;font-weight:600;color:var(--mute);cursor:pointer;padding:6px 2px}nav button.on{color:var(--ac)}
+svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.back{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;padding:20px;z-index:9}
+.modal{background:var(--bg);border-radius:24px;padding:28px;width:100%;max-width:440px;max-height:90vh;overflow:auto}.modal label{display:block;margin-top:14px;font-size:13px;color:var(--mute)}.modal .field{margin-top:5px}
+.mb{width:100%;border:0;border-radius:12px;padding:13px;font-weight:700;cursor:pointer;margin-top:14px;background:var(--ac);color:#fff}.mb.g{background:none;border:1px solid var(--line);color:var(--fg)}.mb.d{background:none;color:#c0392b}
+@media(min-width:900px){
+ aside{display:flex;flex-direction:column;position:fixed;left:0;top:0;bottom:0;width:236px;background:var(--side);border-right:1px solid var(--line);padding:32px 22px}
+ main{margin-left:236px;max-width:none;padding:56px 64px 80px}main>.brand{display:none}main>*{max-width:960px}
+ aside nav{display:flex;flex-direction:column;gap:4px;margin-top:40px}aside nav button{flex-direction:row;gap:12px;font-size:14px;padding:11px 14px;border-radius:12px;color:var(--mute);justify-content:flex-start}aside nav button.on{background:var(--fill);color:var(--fg)}
+ nav.pill2{display:none}h1{font-size:56px}.today{display:flex;justify-content:space-between;align-items:flex-end}.add{width:auto;margin:0}.today .n{font-size:56px}
+ .split{grid-template-columns:240px 1fr;gap:56px}.tx svg{display:block}.foot{margin-top:auto;border-top:1px solid var(--line);padding-top:18px;font-size:11px;color:var(--mute)}.foot div{font-size:14px;color:var(--fg);margin-top:8px}}
+@media(max-width:899px){input,select,textarea,.field,.pill{font-size:16px}}
+input[type=date].field{-webkit-appearance:none;appearance:none;display:block;width:100%;min-width:0;max-width:100%;height:44px;text-align:left}
+input[type=date].field::-webkit-date-and-time-value{text-align:left;margin:0;min-height:1.2em}
+.gate nav.pill2{display:none!important}.gc{background:var(--side);border:1px solid var(--line);border-radius:20px;padding:18px;margin-top:28px;max-width:440px}.lf{display:block;width:100%;background:transparent;border:1px solid var(--line);border-radius:10px;padding:11px 12px;font:inherit;color:var(--fg)}.lf::placeholder{color:var(--mute)}.lf:focus{outline:2px solid #6C8FB0;outline-offset:1px}.lb{display:block;width:100%;background:transparent;border:1px solid var(--fg);border-radius:10px;padding:11px;font-weight:500;font-size:15px;color:var(--fg);cursor:pointer;text-align:center}.lb:hover{background:var(--fill)}.lm{min-height:20px;margin:8px 0 0;font-size:13px}.lm.e{color:var(--ac)}.lm.n{color:var(--mute)}.ab{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);max-width:560px}.ag{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 24px;margin:26px 0 28px}.ag b{display:block;font-size:14px;margin-bottom:2px}.ag span{display:block;font-size:13px;color:var(--mute);line-height:1.45}.ag .dot{margin-right:8px}@media(min-width:900px){.gfoot{display:none}}
+body:not(.gate) .brand{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.tgs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}.tgs .chip{padding:4px 12px;color:var(--fg)}#tg{display:flex;flex-wrap:wrap;margin-top:2px}
+.lh{display:flex;align-items:center;margin-top:14px;font-size:13px;line-height:1.2;color:var(--mute)}.op{font-size:11px;border:1px solid var(--line);border-radius:99px;padding:1px 8px;margin-left:6px;color:var(--mute)}.ii{position:relative;display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;margin-left:6px;padding:0;background:none;border:1px solid var(--mute);border-radius:50%;font-size:9px;line-height:1;color:var(--mute);cursor:pointer;flex:none}.ii::after{content:"";position:absolute;inset:-12px}.tp{background:var(--fill);border-radius:10px;padding:9px 12px;margin-top:6px;font-size:12px;line-height:1.45;color:var(--fg)}.tp[hidden]{display:none}
+select.field{-webkit-appearance:none;appearance:none;padding-right:38px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%237a7d78' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:12px 8px}
+</style></head><body><aside><div class="brand">spending spending</div><nav id="n1"></nav><div class="foot">Personal spending intelligence<div>Track less.<br>Understand more.</div></div></aside><main id="app"></main><nav class="pill2" id="n2"></nav>
+<script>
+const CATS=[["Home & Utilities","The ongoing cost of your home: electricity, water, internet, rent, and other utilities.","#3F6283"],["Household Essentials","Things used around the home: cleaning, toiletries, kitchen, laundry, and small necessities.","#F28C28"],["Grocery Shopping","Food and ingredients bought for home, from vegetables and meat to drinking water.","#7DBB47"],["Health","Medical and health-related spending including doctors, medication, vitamins, tests, and care.","#E3433A"],["Skincare / Personal Care","Skincare, haircare, cosmetics, salon visits, haircuts, and personal upkeep.","#B08AAE"],["Dining Out","Meals not prepared at home, including restaurants, delivery, takeaway, and meals outside.","#F6A94D"],["Snacks","Small bites, treats, street snacks, convenience-store snacks, drinks, and desserts.","#9CC9E6"],["Coffee","Coffee shops, coffee drinks, café visits, beans, and casual café hangouts.","#B8322B"],["Wellness","Spending focused on relaxation and wellbeing, including massage, spa, and wellness activities.","#5FA136"],["Shopping","Lifestyle and want-based purchases such as clothes, shoes, bags, and accessories.","#8E6A8D"],["Travel","Spending that happens as part of a trip: flights, hotels, meals, tickets, parking, and fuel.","#6C8FB0"],["Entertainment","Activities primarily for fun: cinema, concerts, shows, attractions, events, and games.","#F0766E"],["Work / Business","Expenses directly related to projects, work, business purchases, and operating costs.","#A8D37A"],["Vehicles","Car and motorbike costs including fuel, parking, servicing, repairs, tax, washing, and accessories.","#D9701A"],["Miscellaneous","Gifts, donations, giving, and unusual one-off expenses that genuinely fit nowhere else.","#C9A9C6"]].map(c=>({n:c[0],d:c[1],c:c[2]}));
+const ci=n=>Math.max(0,CATS.findIndex(c=>c.n===n)),colr=n=>CATS[ci(n)].c;
+const MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const IC={home:'<path d="M4 11l8-7 8 7v9H4z"/>',tx:'<path d="M4 7h16M4 12h10M4 17h16"/>',monthly:'<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>',yearly:'<path d="M5 20V10M10 20V5M15 20v-7M20 20H3"/>',more:'<circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/>'};
+const ico=k=>`<svg class="i" viewBox="0 0 24 24">${IC[k]}</svg>`,CH='<svg class="i" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>',CD='<svg class="i" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>';
+const $=s=>document.querySelector(s),p2=n=>String(n).padStart(2,"0");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const rp=n=>"Rp "+Math.round(n).toLocaleString("id-ID");
+const sh=n=>n>=1e6?"Rp"+(n/1e6).toFixed(1).replace(".",",")+"M":rp(n);
+const todayStr=()=>{const d=new Date();return`${d.getFullYear()}-${p2(d.getMonth()+1)}-${p2(d.getDate())}`};
+const ml=m=>MN[+m.slice(5)-1]+" "+m.slice(0,4),fd=d=>{const[y,m,x]=d.split("-");return`${MN[m-1].slice(0,3)} ${+x}, ${y}`};
+let S={tab:"home",month:todayStr().slice(0,7),year:todayStr().slice(0,4),fm:"all",cat:"All",q:"",cmpA:null,cmpB:null,tx:[],bd:{},inc:[],inv:[],px:{},priv:[],shared:new Set(),miss:0,sync:"local",open:{},bdc:"Vehicles"};
+/* ---------- data layer: Google Sheets is the main copy; this browser keeps a local copy + a send queue ---------- */
+const LS="ss_tx_v1",LB="ss_bd_v1",LI="ss_inc_v1",LV="ss_inv_v1",LP="ss_px_v1",LQ="ss_queue_v1",LC="ss_cfg_v1";
+const D={tx:[],inc:[],inv:[]};/* every record, INCLUDING ones marked deleted. S.tx / S.inc / S.inv hold only the active ones */
+const jget=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}};
+const CFG=Object.assign({url:"",code:"",dev:""},jget(LC,{}));
+let Q=jget(LQ,[]),seq=Q.reduce((m,x)=>Math.max(m,x.seq||0),0);
+const saveQ=()=>{try{localStorage.setItem(LQ,JSON.stringify(Q))}catch(e){S.warn=1}};
+const cfgOK=()=>!!(CFG.url&&CFG.code);
+function enqueue(k,id,payload){seq++;const qk=k+":"+id;Q=Q.filter(x=>x.qk!==qk);Q.push({qk,seq,k,id,...payload});saveQ();schedule()}
+function views(){S.tx=D.tx.filter(x=>!x.deleted);S.inc=D.inc.filter(x=>!x.deleted);S.inv=D.inv.filter(x=>!x.deleted)}
+const store={
+ async init(){try{localStorage.setItem("__t","1");localStorage.removeItem("__t")}catch(e){S.warn=1}this.loadLocal();flush()},
+ loadLocal(){D.tx=jget(LS,[]);D.inc=jget(LI,[]);D.inv=jget(LV,[]);S.px=jget(LP,{});views();render()},
+ keep(){try{localStorage.setItem(LS,JSON.stringify(D.tx));localStorage.setItem(LI,JSON.stringify(D.inc));localStorage.setItem(LV,JSON.stringify(D.inv));localStorage.setItem(LP,JSON.stringify(S.px))}catch(e){S.warn=1}},
+ upsert(k,r){if(!r.updatedAt)r.updatedAt=r.createdAt||new Date().toISOString();const a=D[k],i=a.findIndex(x=>x.id===r.id);if(i>=0)a[i]=r;else a.push(r);this.keep();views();enqueue(k,r.id,{rec:r});render()},
+ async save(t){this.upsert("tx",t)},
+ async put(k,r){this.upsert(k,r)},
+ softDel(k,id){const r=D[k].find(x=>x.id===id);if(!r)return;const now=new Date().toISOString();this.upsert(k,{...r,deleted:true,deletedAt:now,updatedAt:now})},
+ async del(id){this.softDel("tx",id)},
+ async rm(k,id){this.softDel(k,id)},
+ async savePx(){this.keep();enqueue("set","px",{skey:"px",value:S.px,updatedAt:new Date().toISOString()});render()}};
+/* ---------- sending to Google Sheets (one way: app -> Sheet) ---------- */
+let busy=false,tmr=null;
+const toOp=q=>{if(q.k==="set")return{k:"set",key:q.skey,value:q.value,updatedAt:q.updatedAt};
+ if(q.k==="tx"){const r={...q.rec,tags:tagsOf(q.rec)};delete r.breakdown;return{k:"tx",rec:r}}/* old records that still carry a breakdown are sent as a tag; the local record is not changed */
+ return{k:q.k,rec:q.rec}};
+function schedule(){clearTimeout(tmr);tmr=setTimeout(()=>flush(),700)}
+const SCRIPT_VERSION=3;
+const GS_OK=/^https:\/\/script\.google\.com\/(a\/[^\/]+\/)?macros\/s\/[\w-]+\/exec$/;
+function urlProblem(u){
+ if(!u)return "Paste the script address first.";
+ if(/docs\.google\.com\/spreadsheets/.test(u))return "That is the address of your Google Sheet, not of the script. In the Sheet open Extensions > Apps Script, then Deploy > New deployment > Web app, and copy the Web app URL.";
+ if(/script\.google\.com\/(home|d\/)/.test(u))return "That is the address of the script editor. After Deploy > New deployment > Web app, copy the Web app URL that ends with /exec.";
+ if(/\/dev(\?|#|$)/.test(u))return "That address ends with /dev, which is only a test address. Use the Web app URL that ends with /exec.";
+ if(!GS_OK.test(u))return "The address must look like https://script.google.com/macros/s/…/exec (the Web app URL shown after Deploy).";
+ return ""}
+/* Opens the script address with a plain GET to find out WHY a connection fails. */
+async function probe(){let text;
+ try{const r=await fetch(CFG.url,{method:"GET"});text=await r.text()}
+ catch(e){try{await fetch(CFG.url,{method:"GET",mode:"no-cors"});return{state:"blocked"}}catch(e2){return{state:"unreachable"}}}
+ const m=/script is running \(version (\d+)\)/.exec(text);
+ return m?{state:"ok",version:+m[1],text}:{state:"other",text}}
+function probeMsg(p){
+ if(p.state==="unreachable")return "The browser could not reach script.google.com at all. Check your internet. If you opened this app inside Claude or another preview window, open it from your own GitHub Pages address instead.";
+ if(p.state==="blocked")return "The browser reached Google but was not allowed to read the answer. This almost always means the deployment access is not set to Anyone (Google is asking for a login), or the address belongs to an old deployment. Fix: in Apps Script choose Deploy > Manage deployments > pencil icon > Who has access: Anyone > New version > Deploy. Then open the address in a private window: you should see “script is running”.";
+ if(p.state==="other")return "The address answered, but not with our script. If you see a Google error page, paste the whole Code.gs again, save it, and deploy a New version.";
+ if(/NOT CHANGED/.test(p.text||""))return "The script is running, but SECRET_CODE inside it has not been changed yet. Edit that line, save, and deploy a New version.";
+ return ""}
+async function gsCall(body){let r;
+ try{r=await fetch(CFG.url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({code:CFG.code,device:CFG.dev,...body})})}
+ catch(e){throw new Error((probeMsg(await probe())||"The connection failed for an unknown reason.")+" (Technical detail: "+(e&&e.message||e)+")")}
+ if(!r.ok)throw new Error("The script answered with HTTP "+r.status+". Deploy a New version and check that access is set to Anyone.");
+ let j;try{j=await r.json()}catch(e){throw new Error(probeMsg(await probe())||"The answer did not come from our script. Check the address and that access is set to Anyone.")}
+ if(!j.ok)throw new Error(j.error||"Rejected by the script");return j}
+async function flush(){if(busy||!cfgOK()||!Q.length)return;busy=true;S.syncErr="";refreshSync();const tried=new Set();
+ try{for(;;){const batch=Q.filter(x=>!tried.has(x.seq)).slice(0,50);if(!batch.length)break;batch.forEach(x=>tried.add(x.seq));
+   const j=await gsCall({action:"push",ops:batch.map(toOp)}),ok=new Set(),bad=[];
+   batch.forEach((q,i)=>{const h=(j.results||[])[i];if(h&&h.status==="error")bad.push(h.message||"rejected");else if(h)ok.add(q.seq)});
+   Q=Q.filter(x=>!ok.has(x.seq));saveQ();S.lastOk=Date.now();
+   if(bad.length)S.syncErr=bad.length+" record(s) were rejected by the script (they stay saved on this device): "+bad[0];refreshSync()}}
+ catch(e){S.syncErr=e.message}finally{busy=false;refreshSync()}}
+function statusHtml(){const a=[];
+ if(!cfgOK())a.push("Not connected yet. Fill in the script address and secret code below.");
+ else if(busy)a.push("Sending…");
+ else if(Q.length)a.push("Waiting to send: "+Q.length+" record(s)");
+ else a.push(S.lastOk?"Everything on this device has been sent ("+new Date(S.lastOk).toLocaleTimeString("en-GB")+")":"Nothing to send yet.");
+ if(S.syncErr)a.push('<span style="color:#c0392b">'+esc(S.syncErr)+"</span>");
+ if(S.check)a.push(S.check);return a.join("<br>")}
+function refreshSync(){const e=$("#gs_stat");if(e)e.innerHTML=statusHtml();const b=$("#gs_badge");if(!b)return;
+ const t=!cfgOK()?"":S.syncErr?"⚠ not sent":busy?"sending…":Q.length?"⏳ "+Q.length+" not sent":"";b.textContent=t;b.style.display=t?"block":"none"}
+function gsSave(){const u=$("#gs_u").value.trim(),c=$("#gs_c").value.trim(),d=$("#gs_d").value.trim();
+ if(u){const pr=urlProblem(u);if(pr){alert(pr);return}}
+ if(u&&u!==CFG.url&&!c){alert("You changed the script address, so please type the secret code again too. A new script usually has a new code.");return}
+ CFG.url=u;if(c)CFG.code=c;CFG.dev=d||CFG.dev||"device-"+Math.random().toString(36).slice(2,6);
+ try{localStorage.setItem(LC,JSON.stringify(CFG))}catch(e){S.warn=1}S.syncErr="";S.check="";render();flush()}
+async function gsPing(){if(!cfgOK()){S.check="Fill in the address and code and press Save first.";return refreshSync()}
+ S.check="Checking the script…";refreshSync();
+ const p=await probe();
+ if(p.state!=="ok"||/NOT CHANGED/.test(p.text)){S.check="Failed: "+esc(probeMsg(p));return refreshSync()}
+ S.check="Step 1 of 2 OK: the script is running (version "+p.version+")."+(p.version!==SCRIPT_VERSION?" This app expects version "+SCRIPT_VERSION+". If sending fails, deploy a New version.":"")+"<br>Checking the secret code…";refreshSync();
+ try{const j=await gsCall({action:"ping"}),c=j.counts||{},L={Spending:D.tx.length,Income:D.inc.length,Investment:D.inv.length};
+  S.check="Connection works. The script is running (version "+p.version+") and the secret code matches.<br>"+Object.keys(L).map(n=>{const r=c[n]?c[n].rows:"?";return n+": device "+L[n]+" · Sheet "+r+(L[n]===r?" ✔":" ≠")}).join("<br>")+(Q.length?"<br>"+Q.length+" record(s) are still waiting to be sent, so a difference is normal.":"")+'<br><span class="note">Counts include records marked as deleted.</span>'}
+ catch(e){S.check="Step 1 of 2 OK (script found, version "+p.version+"). Step 2 failed: "+esc(e.message)}refreshSync()}
+function resendAll(){if(!cfgOK()){S.check="Save the address and code first.";return refreshSync()}
+ let n=0;["tx","inc","inv"].forEach(k=>D[k].forEach(r=>{enqueue(k,r.id,{rec:r});n++}));
+ if(Object.keys(S.px||{}).length)enqueue("set","px",{skey:"px",value:S.px,updatedAt:new Date().toISOString()});
+ S.check="Queued "+n+" record(s) to send again. Records already in the Sheet are updated, never duplicated.";refreshSync();flush()}
+{const bd=document.createElement("div");bd.id="gs_badge";bd.dataset.act="gsopen";bd.style.cssText="position:fixed;top:calc(env(safe-area-inset-top,0px) + 6px);right:12px;font-size:12px;z-index:5;cursor:pointer;color:var(--mute);display:none";document.body.appendChild(bd)}
+window.addEventListener("online",()=>flush());document.addEventListener("visibilitychange",()=>{if(!document.hidden)flush()});setInterval(()=>flush(),30000);
+const TH="ss_theme_v1";function setTheme(v){try{localStorage.setItem(TH,v)}catch(e){}const r=document.documentElement;if(v==="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",v)}
+/* ---------- intro + PIN lock ---------- */
+const LK="ss_lock_v1",IN="ss_intro_v1",BK="ss_bk_v1";
+function bkText(){let t=0;try{t=+localStorage.getItem(BK)||0}catch(e){}if(!t)return"No backup yet";const d=Math.floor((Date.now()-t)/864e5);return"Last backup: "+(d<=0?"today":d===1?"yesterday":d+" days ago")}
+let LOCK=null;try{LOCK=JSON.parse(localStorage.getItem(LK)||"null")}catch(e){}
+try{S.intro=localStorage.getItem(IN)!=="1"}catch(e){S.intro=true}
+S.locked=!!LOCK;S.tries=0;S.until=0;
+
+const hp=t=>{let a=0xdeadbeef,b=0x41c6ce57;for(let i=0;i<t.length;i++){const c=t.charCodeAt(i);a=Math.imul(a^c,2654435761);b=Math.imul(b^c,1597334677)}a=Math.imul(a^(a>>>16),2246822507)^Math.imul(b^(b>>>13),3266489909);b=Math.imul(b^(b>>>16),2246822507)^Math.imul(a^(a>>>13),3266489909);return String(4294967296*(2097151&b)+(a>>>0))};
+function setPin(p){const s=Math.random().toString(36).slice(2);LOCK={s,h:hp(s+":"+p)};try{localStorage.setItem(LK,JSON.stringify(LOCK))}catch(e){S.warn=1}}
+S.authed=true;S.who="";
+const okPin=p=>!!LOCK&&hp(LOCK.s+":"+p)===LOCK.h;
+function doUnlock(v){if(Date.now()<S.until){S.lkErr="Too many attempts. Please wait a moment.";return render()}
+ if(okPin(v)){S.locked=false;S.tries=0;S.lkErr="";S.forgot=false}else{S.tries++;S.lkErr="That PIN is not right.";if(S.tries>=5){S.until=Date.now()+30000;S.tries=0;S.lkErr="Too many attempts. Please wait 30 seconds."}}render()}
+const brandTap=()=>false;
+function resetPin(c){c=c??($("#fc")?$("#fc").value:"");if(Date.now()<S.until){S.lkErr="Too many attempts. Please wait a moment.";return render()}
+ if(cfgOK()&&c.trim()===CFG.code){LOCK=null;try{localStorage.removeItem(LK)}catch(e){}S.locked=false;S.forgot=false;S.lkErr="";S.tries=0}else{S.tries++;S.lkErr="That secret code is not right.";if(S.tries>=5){S.until=Date.now()+30000;S.tries=0;S.lkErr="Too many attempts. Please wait 30 seconds."}}render()}
+function eraseLocal(t){t=t??($("#fe")?$("#fe").value:"");if(t.trim().toUpperCase()!=="ERASE"){S.lkErr="Type ERASE to confirm.";return render()}
+ [LS,LI,LV,LP,LB,LQ,LK].forEach(k=>{try{localStorage.removeItem(k)}catch(e){}});Q=[];D.tx=[];D.inc=[];D.inv=[];S.px={};LOCK=null;views();S.locked=false;S.forgot=false;S.lkErr="";S.tries=0;render()}
+function gateKind(){return S.force?"intro":S.locked?"lock":""}
+function aboutBody(){const item=(c,t,d)=>`<div><b><i class="dot" style="background:${c}"></i>${t}</b><span>${d}</span></div>`;
+ return`<p class="sub" style="margin-top:12px">A personal spending tracker. It does not budget, judge, or give advice. It simply helps you see where your money went.</p><div class="ag">${item("#E3433A","Record","Add a spending in seconds.")}${item("#6C8FB0","Understand","See today, this month, this year.")}${item("#7DBB47","Compare","Set one month beside another.")}${item("#B08AAE","Discover patterns","Notice what you keep spending on.")}</div><p class="note">Your records are sent to your own Google Sheet (set it up under More › Google Sheets). This browser keeps a local copy until each record is sent.</p>`}
+function gate(k){
+ const H="A calm record of where your money goes.",hd=h=>`<div class="brand">spending spending</div><h1 style="max-width:640px">${h}</h1>`,
+ msg=(e,n)=>`<p class="lm ${e?"e":"n"}">${esc(e||n||"")}</p>`,
+ about=()=>`<div class="ab"><div class="eye">About spending spending</div>${aboutBody()}<p class="note gfoot" style="margin-top:14px">Track less. Understand more.</p></div>`;
+ if(k==="lock")return hd(H)+`<div class="gc"><div class="eye" style="margin-bottom:12px">Locked. Enter your PIN</div><input class="lf" id="lk" type="password" inputmode="numeric" autocomplete="off" placeholder="PIN">${msg(S.lkErr)}<button class="lb" style="margin-top:6px" data-act="unlock">Unlock</button></div><p class="note" style="margin-top:20px;max-width:440px;text-align:center"><span style="text-decoration:underline;cursor:pointer" data-act="forgot">Forgot PIN?</span></p>
+   ${S.forgot?(cfgOK()?`<div class="ov" style="display:block;margin-top:16px;max-width:440px"><p style="font-weight:400;font-size:14px;margin:0 0 10px">Enter your Google Sheets secret code to remove the PIN. Your records are not touched.</p><input class="field" id="fc" type="password" placeholder="Secret code" autocapitalize="none" autocomplete="off"><button class="btn dk" style="width:100%" data-act="resetpin">Remove PIN</button></div>`:`<div class="ov" style="display:block;margin-top:16px;max-width:440px"><p style="font-weight:400;font-size:14px;margin:0 0 10px">Google Sheets is not connected on this device, so the secret code cannot be checked. The only way to remove the PIN is to erase the records stored on this device. Type ERASE to confirm.</p><input class="field" id="fe" placeholder="ERASE" autocapitalize="characters" autocomplete="off"><button class="btn dk" style="width:100%" data-act="erase">Erase and remove PIN</button></div>`):""}`;
+ return hd(H)+about()+`<button class="lb" style="max-width:240px;margin-top:8px" data-act="start">Back</button>`}
+const IDLE=10*60*1000;let LAST=Date.now();
+function idleCheck(){}
+["click","keydown","touchstart","scroll","input"].forEach(ev=>document.addEventListener(ev,()=>{LAST=Date.now()},{capture:true,passive:true}));
+if(typeof setInterval!=="undefined")setInterval(()=>idleCheck(),30000);
+let hid=0;document.addEventListener("visibilitychange",()=>{if(document.hidden)hid=Date.now();else{idleCheck();if(LOCK&&S.authed&&hid&&Date.now()-hid>120000){S.locked=true;render()}}});
+document.addEventListener("keydown",e=>{if(e.key==="Enter"){if(e.target.id==="lk")doUnlock(e.target.value);else if(e.target.id==="fc")resetPin();else if(e.target.id==="fe")eraseLocal()}});
+/* ---------- helpers ---------- */
+const sum=a=>a.reduce((s,t)=>s+t.amount,0),inM=(m)=>S.tx.filter(t=>t.date.startsWith(m));
+const byDate=a=>[...a].sort((x,y)=>y.date.localeCompare(x.date)||(y.createdAt||"").localeCompare(x.createdAt||""));
+const months=()=>[...new Set([...S.tx.map(t=>t.date.slice(0,7)),todayStr().slice(0,7),S.month,S.cmpA,S.cmpB].filter(Boolean))].sort().reverse();
+const years=()=>[...new Set([...S.tx.map(t=>t.date.slice(0,4)),S.year])].sort().reverse();
+const mopt=(sel,all)=>(all?`<option value="all" ${sel==="all"?"selected":""}>All months</option>`:"")+months().map(m=>`<option value="${m}" ${m===sel?"selected":""}>${ml(m)}</option>`).join("");
+const sel=(k,o)=>`<select class="pill" data-sel="${k}">${o}</select>`;
+const prevM=m=>{let y=+m.slice(0,4),x=+m.slice(5)-1;if(!x){y--;x=12}return`${y}-${p2(x)}`};
+const byCat=a=>CATS.map(c=>({...c,v:sum(a.filter(t=>t.category===c.n))}));
+const head=(e,t,r)=>`<div class="hd"><div><div class="eye">${e}</div><h2>${t}</h2></div>${r||""}</div>`;
+function chart(a,lab){const rows=byCat(a),T=sum(a),pos=rows.filter(r=>r.v>0),Ro=105,Ri=71,P=(r,t)=>[(110+r*Math.cos(t)).toFixed(3),(110+r*Math.sin(t)).toFixed(3)];
+ let t0=-Math.PI/2,arcs="";
+ if(pos.length===1)arcs=`<circle r="88" cx="110" cy="110" fill="none" stroke="${pos[0].c}" stroke-width="34"/>`;
+ else pos.forEach(r=>{const t1=t0+r.v/T*2*Math.PI,big=t1-t0>Math.PI?1:0,[x0,y0]=P(Ro,t0),[x1,y1]=P(Ro,t1),[x2,y2]=P(Ri,t1),[x3,y3]=P(Ri,t0);arcs+=`<path d="M${x0} ${y0}A${Ro} ${Ro} 0 ${big} 1 ${x1} ${y1}L${x2} ${y2}A${Ri} ${Ri} 0 ${big} 0 ${x3} ${y3}Z" fill="${r.c}" stroke="var(--bg)" stroke-width="2" stroke-linejoin="round"/>`;t0=t1});
+ const svg=`<svg role="img" aria-label="${esc(lab)} spending by category" viewBox="0 0 220 220" style="width:100%;max-width:240px;margin:auto;display:block"><circle r="88" cx="110" cy="110" fill="none" stroke="var(--fill)" stroke-width="34"/>${arcs}<text x="110" y="104" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="var(--mute)">${esc(lab)}</text><text x="110" y="128" text-anchor="middle" font-size="19" font-weight="700" fill="var(--fg)">${sh(T)}</text></svg>`;
+ const lg=rows.filter(r=>r.v>0).map(r=>`<div class="r"><span><i class="dot" style="background:${r.c}"></i>${esc(r.n)}</span><b>${rp(r.v)}</b></div>`).join("");
+ return`<div class="split">${svg}<div class="leg">${lg||'<p class="note">Nothing recorded yet.</p>'}</div></div>`}
+const normTag=v=>String(v??"").trim().replace(/^#+/,"").replace(/\s+/g," ").trim().slice(0,30);
+const tagsOf=t=>Array.isArray(t.tags)?t.tags:(t.breakdown?[String(t.breakdown)]:[]);
+function allTags(){const m=new Map();byDate(S.tx).forEach(t=>tagsOf(t).forEach(x=>{const k=x.toLowerCase(),o=m.get(k);if(o)o.c++;else m.set(k,{n:x,c:1})}));return[...m.values()].sort((a,b)=>b.c-a.c||a.n.localeCompare(b.n))}
+function addTag(list,raw){let v=normTag(raw);if(!v)return list;const k=allTags().find(x=>x.n.toLowerCase()===v.toLowerCase());if(k)v=k.n;return list.some(x=>x.toLowerCase()===v.toLowerCase())?list:[...list,v]}
+function suggestTags(list,q){q=normTag(q).toLowerCase();if(!q)return[];const have=new Set(list.map(x=>x.toLowerCase()));return allTags().filter(k=>!have.has(k.n.toLowerCase())&&k.n.toLowerCase().startsWith(q)).sort((a,b)=>a.n.localeCompare(b.n,undefined,{sensitivity:"base"})).slice(0,8)}
+const row=t=>`<div class="tx" data-act="edit" data-id="${t.id}"><i style="background:${colr(t.category)}"></i><div class="m"><b>${esc(t.title)}</b><span>${esc(t.category)}${tagsOf(t).length?" · "+esc(tagsOf(t).join(", ")):""}</span>${t.note?`<span>${esc(t.note)}</span>`:""}</div><div class="r"><b>${rp(t.amount)}</b><span>${fd(t.date)}</span></div>${CH}</div>`;
+const pct=(a,b,d=1)=>a===0&&b===0?["—",""]:a===0?["New","up"]:[((b>a?"+":"")+((b-a)/a*100).toFixed(d)+"%"),b>a?"up":"dn"];
+function repeats(){const g={};S.tx.forEach(t=>{const k=t.title.trim().toLowerCase();(g[k]=g[k]||{n:t.title.trim(),c:0,m:new Set(),v:0});const o=g[k];o.c++;o.m.add(t.date.slice(0,7));o.v+=t.amount});return Object.values(g).filter(x=>x.c>1).sort((a,b)=>b.v-a.v).slice(0,6)}
+/* ---------- views ---------- */
+const V={
+home(){const td=S.tx.filter(t=>t.date===todayStr()),mo=inM(S.month),rep=repeats();
+ return`<div class="brand">spending spending</div><h1>Hello, good day!</h1><p class="sub">Hope you're having a good day. Let's keep track of your spending and understand it better.</p>${S.warn?`<p class="note" style="color:#c0392b;margin-top:12px">Your browser is blocking storage, so records will not be saved. Open spending spending in a normal (non-private) tab.</p>`:""}
+ <div style="margin-top:28px;display:flex;gap:14px;align-items:center;flex-wrap:wrap">${sel("month",mopt(S.month))}<span class="note">${mo.length} transaction${mo.length===1?"":"s"} · ${rp(sum(mo))}</span></div>
+ <div class="today"><div><div class="eye">Today</div><div class="n">${rp(sum(td))}</div><p>${td.length} transaction${td.length===1?"":"s"}</p></div><button class="add" data-act="add">+ &nbsp;Add Spending</button></div>
+ <div class="sec">${head("Today's spending breakdown","Where did it go?")}${chart(td,"TODAY")}</div>
+ <div class="sec">${head("&nbsp;","Recent transactions",'<span class="note">Latest activity</span>')}<div class="list" style="margin-top:20px">${S.tx.length?byDate(S.tx).slice(0,6).map(row).join(""):'<p class="note">No spending recorded yet. Tap Add Spending to begin.</p>'}</div></div>
+ ${rep.length?`<div class="sec">${head("Patterns","Repeat spending",'<span class="note">Exact merchant matches only</span>')}<div class="pat">${rep.map(r=>`<div><b>${esc(r.n)}</b><small>${r.c} transactions · ${r.m.size} month${r.m.size>1?"s":""}</small><b class="v">${rp(r.v)}</b></div>`).join("")}</div></div>`:""}`},
+tx(){let a=S.tx;if(S.fm!=="all")a=a.filter(t=>t.date.startsWith(S.fm));if(S.cat!=="All")a=a.filter(t=>t.category===S.cat);
+ const q=S.q.trim().toLowerCase();if(q)a=a.filter(t=>[t.title,t.category,tagsOf(t).join(" "),t.breakdown,t.note].join(" ").toLowerCase().includes(q));
+ return`<div class="brand">spending spending</div><div class="eye">Your record</div><h1>Transactions</h1>
+ <div class="search"><input id="q" placeholder="Search transactions…" value="${esc(S.q)}">${sel("fm",mopt(S.fm,1))}</div>
+ <div class="chips">${["All",...CATS.map(c=>c.n)].map(c=>`<button class="chip ${S.cat===c?"on":""}" data-act="cat" data-c="${esc(c)}">${esc(c)}</button>`).join("")}</div>
+ <div class="hd" style="margin-top:40px"><h2>${a.length} transaction${a.length===1?"":"s"}</h2><span class="note">${S.fm==="all"?"All time":ml(S.fm)} · ${rp(sum(a))}</span></div>
+ <div class="list" style="margin-top:16px">${a.length?byDate(a).map(row).join(""):'<p class="note">No transactions found.</p>'}</div>`},
+monthly(){const mo=inM(S.month),A=S.cmpA||prevM(S.month),B=S.cmpB||S.month,cur=S.month===todayStr().slice(0,7);
+ const days=cur?+todayStr().slice(8):new Date(+S.month.slice(0,4),+S.month.slice(5),0).getDate();
+ const ra=byCat(inM(A)),rb=byCat(inM(B)),ta=sum(inM(A)),tb=sum(inM(B)),[op,oc]=pct(ta,tb,2);
+ return`<div class="brand">spending spending</div><div class="hd"><div><div class="eye">Monthly view</div><h1>${ml(S.month)}</h1></div>${sel("month",mopt(S.month))}</div>
+ <div class="strip"><div><div class="eye">Total spending</div><b>${rp(sum(mo))}</b></div><div><div class="eye">Transactions</div><b>${mo.length}</b></div><div><div class="eye">Daily average</div><b>${rp(sum(mo)/days)}</b></div></div>
+ <div class="sec">${head("Category breakdown","Where did it go?")}${chart(mo,"THIS MONTH")}</div>
+ <div class="sec">${head("Compare months","What changed?",`<div style="display:flex;gap:8px;align-items:center">${sel("cmpA",mopt(A))}<span class="note">to</span>${sel("cmpB",mopt(B))}</div>`)}
+ <div class="ov">Overall change<div>${tb-ta<0?"−":""}${rp(Math.abs(tb-ta))} <span class="${oc}">${op}</span></div></div>
+ <div style="overflow-x:auto"><table><tr><th>Category</th><th>${ml(A)}</th><th>${ml(B)}</th><th>Change</th></tr>${ra.map((r,i)=>{const[p,c]=pct(r.v,rb[i].v);return`<tr><td><i class="dot" style="background:${r.c}"></i>${esc(r.n)}</td><td>${rp(r.v)}</td><td>${rp(rb[i].v)}</td><td class="${c}">${p}</td></tr>`}).join("")}</table></div></div>`},
+yearly(){const a=S.tx.filter(t=>t.date.startsWith(S.year)),mt=Array.from({length:12},(_,i)=>sum(a.filter(t=>+t.date.slice(5,7)===i+1))),used=mt.filter(v=>v>0),mx=Math.max(...mt,1);
+ const hi=mt.indexOf(Math.max(...mt)),lv=Math.min(...used),lo=mt.indexOf(lv),bc=byCat(a).sort((x,y)=>y.v-x.v)[0],bt=byDate(a).sort((x,y)=>y.amount-x.amount)[0];
+ const cell=(e,t,s)=>`<div><div class="eye">${e}</div><b>${t}</b><span>${s}</span></div>`;
+ return`<div class="brand">spending spending</div><div class="hd"><div><div class="eye">Year in review</div><h1>${S.year}</h1></div>${sel("year",years().map(y=>`<option ${y===S.year?"selected":""}>${y}</option>`).join(""))}</div>
+ <div class="eye" style="margin-top:20px">Total spending</div><div style="font-size:44px;font-weight:700;letter-spacing:-.03em">${rp(sum(a))}</div><p class="note">${a.length} transactions across ${used.length} month${used.length===1?"":"s"}</p>
+ <div class="sec">${head("Monthly spending","Your year at a glance")}<div class="bars">${mt.map((v,i)=>`<div><span>${v?sh(v):""}</span><i style="height:${Math.max(v/mx*85,2)}%"></i><span>${MN[i].slice(0,3)}</span></div>`).join("")}</div></div>
+ ${a.length?`<div class="strip">${cell("Highest month",MN[hi].slice(0,3),rp(mt[hi]))}${cell("Lowest month",MN[lo].slice(0,3),rp(lv))}${cell("Biggest category",esc(bc.n),rp(bc.v))}${cell("Biggest transaction",esc(bt.title),rp(bt.amount))}</div>`:""}
+ <div class="sec">${head("","Category breakdown")}${chart(a,S.year)}</div>`},
+income(){const m=S.month,a=byDate(S.inc.filter(r=>r.date.startsWith(m))),i=sum(a),sp=sum(inM(m)),n=i-sp,ms=[...new Set([...S.inc.map(r=>r.date.slice(0,7)),...months()])].sort().reverse().map(x=>`<option value="${x}" ${x===m?"selected":""}>${ml(x)}</option>`).join("");
+ return`<div class="brand">spending spending</div><div class="note" data-act="go" data-t="more" style="cursor:pointer;margin-bottom:12px">‹ More</div><div class="hd"><div><div class="eye">Kept apart from spending</div><h1>Income</h1></div>${sel("month",ms)}</div>
+ <div class="strip"><div><div class="eye">Income</div><b>${rp(i)}</b></div><div><div class="eye">Spending</div><b>${rp(sp)}</b></div><div><div class="eye">Net cash flow</div><b class="${n<0?"up":"dn"}">${n<0?"−":"+"}${rp(Math.abs(n))}</b></div></div>
+ <div class="hd sec"><h2>${a.length} entr${a.length===1?"y":"ies"}</h2><button class="btn dk" data-act="rec" data-k="inc">+ Add Income</button></div>
+ <div class="list" style="margin-top:16px">${a.length?a.map(r=>`<div class="tx" data-act="rec" data-k="inc" data-id="${r.id}"><i style="background:#7DBB47"></i><div class="m"><b>${esc(r.title||r.source)}</b><span>${esc(r.source)}</span>${r.note?`<span>${esc(r.note)}</span>`:""}</div><div class="r"><b>${rp(r.amount)}</b><span>${fd(r.date)}</span></div>${CH}</div>`).join(""):'<p class="note">No income recorded for this month.</p>'}</div>`},
+invest(){const g={};S.inv.forEach(r=>{const o=g[r.asset]=g[r.asset]||{a:r.asset,q:0,c:0};o.q+=r.quantity;o.c+=r.amount});
+ const hs=Object.values(g),pr=hs.filter(h=>S.px[h.a]),val=pr.reduce((t,h)=>t+h.q*S.px[h.a],0),cp=pr.reduce((t,h)=>t+h.c,0),gl=val-cp,gc=x=>x>=0?"dn":"up",gs=x=>(x<0?"−":"+")+rp(Math.abs(x)),qs=q=>String(+q.toFixed(8));
+ return`<div class="brand">spending spending</div><div class="note" data-act="go" data-t="more" style="cursor:pointer;margin-bottom:12px">‹ More</div><div class="hd"><div><div class="eye">Not counted as spending</div><h1>Investments</h1></div><button class="btn dk" data-act="rec" data-k="inv">+ Add Investment</button></div>
+ <div class="strip"><div><div class="eye">Total invested</div><b>${rp(sum(S.inv))}</b></div><div><div class="eye">Current value</div><b>${pr.length?rp(val):"—"}</b></div><div><div class="eye">Unrealized gain / loss</div><b class="${gc(gl)}">${pr.length?gs(gl):"—"}</b></div></div>
+ <div class="sec">${head("Holdings","What you hold")}${hs.length?`<div class="pat">${hs.map(h=>{const p=S.px[h.a],v=p?h.q*p:0;return`<div><b>${esc(h.a)}</b><small>${qs(h.q)} ${esc(h.a)} · avg ${rp(h.c/h.q)}</small><b class="v">${p?rp(v):"—"}</b><small class="${gc(v-h.c)}">${p?gs(v-h.c)+" unrealized":"Add a current price to see value"}</small><div style="display:flex;gap:6px"><input class="field" data-px="${esc(h.a)}" inputmode="numeric" placeholder="Current price per unit" value="${p?rp(p):""}"><button class="btn" style="margin:0" data-act="px" data-a="${esc(h.a)}">Set</button></div></div>`}).join("")}</div>`:'<p class="note" style="margin-top:16px">No holdings yet.</p>'}</div>
+ <div class="sec">${head("Purchase history","Every purchase")}<div class="list" style="margin-top:16px">${S.inv.length?byDate(S.inv).map(r=>`<div class="tx" data-act="rec" data-k="inv" data-id="${r.id}"><i style="background:#6C8FB0"></i><div class="m"><b>${esc(r.asset)}</b><span>${qs(r.quantity)} @ ${rp(r.unitPrice)}</span>${r.note?`<span>${esc(r.note)}</span>`:""}</div><div class="r"><b>${rp(r.amount)}</b><span>${fd(r.date)}</span></div>${CH}</div>`).join(""):'<p class="note">No purchases yet.</p>'}</div></div>`},
+more(){const o=k=>S.open[k],R=(k,t,b)=>`<div class="mr" data-act="tog" data-k="${k}">${t}${o(k)?CD:CH}</div>${o(k)?`<div class="body">${b}</div>`:""}`,tg=allTags(),sc=t=>`<div class="eye" style="margin-top:36px">${t}</div>`,th=document.documentElement.getAttribute("data-theme")||"auto";
+ return`<div class="brand">spending spending</div><div class="eye">Spending spending</div><h1>More</h1>
+ ${sc("Money")}<div class="mr" data-act="go" data-t="income">Income ${CH}</div><div class="mr" data-act="go" data-t="invest">Investments ${CH}</div>
+ ${sc("Categories &amp; Tags")}${R("g","Category Guide",`<div class="cg">${CATS.map(c=>`<p><b>${esc(c.n)}</b><br>${esc(c.d)}</p>`).join("")}</div><p>Top-ups and transfers between your own wallets are not spending. Record the actual purchase instead.</p>`)}
+ ${R("t","Tags",tg.length?`<p>Tap a tag to find the spendings that mention it.</p>`+tg.map(k=>`<span class="tag" data-act="tagq" data-q="${esc(k.n)}" style="cursor:pointer">${esc(k.n)} <span style="color:var(--mute)">${k.c}</span></span>`).join(""):`<p>No tags yet. The tags you add while recording a spending will appear here.</p>`)}
+ ${sc("Security")}
+ ${R("p","PIN Lock",LOCK?`<p>PIN lock is on. spending spending asks for it when you open it or return after a few minutes.</p><p>This is a screen lock, not encryption. It keeps casual eyes out, not a technical person. If you forget the PIN, you can remove it with your Google Sheets secret code. Your records stay untouched.</p><button class="btn" data-act="lockpin">Lock now</button><button class="btn" data-act="offpin">Turn off</button>`:`<p>Optional. A screen lock to keep casual eyes out.</p><p>This is a screen lock, not encryption. It keeps casual eyes out, not a technical person. If you forget the PIN, you can remove it with your Google Sheets secret code. Your records stay untouched.</p><input class="field" id="pn1" type="password" inputmode="numeric" placeholder="New PIN (4 to 6 digits)"><input class="field" id="pn2" type="password" inputmode="numeric" placeholder="Repeat PIN" style="margin-top:8px"><button class="btn dk" data-act="setpin">Set PIN</button>`)}
+ ${sc("Data")}
+ ${R("s","Google Sheets",`<p>Your Google Sheet is the main copy of your records. For now, sending is <b>one way</b>: the app sends to the Sheet and does not read back from it yet.</p><div id="gs_stat" class="note" style="margin:10px 0">${statusHtml()}</div><input class="field" id="gs_u" placeholder="Script address (https://script.google.com/…/exec)" autocomplete="off" autocapitalize="none" value="${esc(CFG.url)}"><input class="field" id="gs_c" type="password" autocomplete="off" style="margin-top:8px" placeholder="${CFG.code?"Code saved. Type again only to change it":"Secret code (same as in the script)"}"><input class="field" id="gs_d" autocomplete="off" style="margin-top:8px" placeholder="Device name (e.g. Ani's iPhone)" value="${esc(CFG.dev)}"><button class="btn dk" data-act="gs_save">Save</button><button class="btn" data-act="gs_ping">Check connection</button><button class="btn" data-act="gs_now">Send now</button><button class="btn" data-act="gs_all">Resend all records</button><p class="note">The address and code are kept on this device only, never in the app's code.</p>`)}
+ ${R("k","Backup &amp; Restore <span class=\"note\" style=\"font-weight:400;margin-left:10px\">"+bkText()+"</span>",`<p>${S.tx.length} transactions on this device. Once connected, your Google Sheet is the main copy; a backup file is an extra safety copy. Restore only adds missing records and also accepts old OUTFLOW backups. Nothing is ever erased.</p><button class="btn" data-act="backup">↓ Export Backup</button><label class="btn" style="display:inline-block">↑ Restore Backup<input type="file" id="rest" accept=".json" hidden></label>`)}
+ ${R("c","Export CSV",`<p>Download a portable spreadsheet copy of all spending records.</p><button class="btn" data-act="csv">↓ Export CSV</button>`)}
+ ${sc("About")}${R("o","About spending spending",aboutBody())}
+ ${sc("Display")}${R("a",`Appearance <span class="note" style="font-weight:400;margin-left:10px">${th[0].toUpperCase()+th.slice(1)}</span>`,`<div style="display:flex;gap:8px;margin-top:4px">${["auto","light","dark"].map(v=>`<button class="chip ${th===v?"on":""}" data-act="theme" data-v="${v}">${v[0].toUpperCase()+v.slice(1)}</button>`).join("")}</div>`)}
+ <p class="note" style="text-align:center;margin-top:60px">spending spending keeps spending separate from transfers, income, and investments.<br>Track less. Understand more.</p>`}};
+function render(){const gk=gateKind();document.body.classList.toggle("gate",!!gk);if(gk){$("#app").innerHTML=gate(gk);$("#n1").innerHTML="";$("#n2").innerHTML="";const l=$("#lk");if(l&&l.focus)l.focus();return}
+ const k=document.activeElement&&document.activeElement.id==="q";
+ $("#app").innerHTML=V[S.tab]();
+ const nv=[["home","Home"],["tx","Transactions"],["monthly","Monthly"],["yearly","Yearly"],["more","More"]].map(([k,l])=>`<button class="${(({income:"more",invest:"more"})[S.tab]||S.tab)===k?"on":""}" data-act="tab" data-t="${k}">${ico(k)}${l}</button>`).join("");
+ $("#n1").innerHTML=nv;$("#n2").innerHTML=nv;
+ if(k){const q=$("#q");q.focus();q.setSelectionRange(q.value.length,q.value.length)}}
+/* ---------- modal ---------- */
+function openForm(id){const t=id?S.tx.find(x=>x.id===id):null,ov=document.createElement("div");ov.className="back";
+ ov.innerHTML=`<div class="modal"><h2>${t?"Edit Spending":"Add Spending"}</h2>
+ <label>What are you spending on?<input class="field" id="f_t" placeholder="e.g. Lunch at Tong Tji" value="${esc(t?.title)}"></label>
+ <label>How much?<input class="field" id="f_a" inputmode="numeric" placeholder="Rp 0" value="${t?rp(t.amount):""}"></label>
+ <div class="lh">Category<button type="button" class="ii" data-tip="c" aria-label="What is this?" aria-expanded="false">i</button></div><div class="tp" id="tip_c" hidden>Pick the closest match. Not sure? Choose Miscellaneous. The Category Guide in More explains what each one covers.</div>
+ <select class="field" id="f_c">${CATS.map(c=>`<option ${t?.category===c.n?"selected":""}>${esc(c.n)}</option>`).join("")}</select>
+ <div class="lh">Tags<span class="op">optional</span><button type="button" class="ii" data-tip="g" aria-label="What are tags?" aria-expanded="false">i</button></div><div class="tp" id="tip_g" hidden>Tags are your own words, like a trip or a person. Next time you type, we suggest the ones you used before.</div><div id="tg"></div>
+ <div style="display:flex;gap:8px;margin-top:5px"><input class="field" id="f_g" placeholder="e.g. office, birthday" autocomplete="off" style="margin:0"><button type="button" class="btn dk" id="f_add" style="margin:0;width:auto">Add</button></div><div id="tgs" class="tgs"></div>
+ <label>Note<span class="op">optional</span><input class="field" id="f_n" placeholder="e.g. Paid in cash" value="${esc(t?.note)}"></label>
+ <label>Date<input class="field" id="f_d" type="date" value="${t?.date||todayStr()}"></label>
+ <p id="err" style="color:#c0392b;font-size:13px;margin:10px 0 0"></p>
+ <button class="mb" id="ok">${t?"Save Changes":"Add Spending"}</button><button class="mb g" id="no">Cancel</button>${t?'<button class="mb d" id="del">Delete Spending</button>':""}</div>`;
+ document.body.appendChild(ov);const g=s=>ov.querySelector(s),close=()=>ov.remove();
+ let tags=[...tagsOf(t||{})];
+ const sug=()=>{const l=suggestTags(tags,g("#f_g").value);g("#tgs").innerHTML=l.map(k=>`<button type="button" class="chip" data-s="${esc(k.n)}">${esc(k.n)}</button>`).join("")};
+ const draw=()=>{g("#tg").innerHTML=tags.map((x,i)=>`<span class="tag">${esc(x)}<u data-i="${i}">×</u></span>`).join("");sug()};
+ const add=v=>{tags=addTag(tags,v);g("#f_g").value="";draw()},commit=()=>{add(g("#f_g").value);return tags};
+ g("#f_g").oninput=sug;g("#f_add").onclick=()=>{add(g("#f_g").value);g("#f_g").focus()};
+ g("#f_g").onkeydown=e=>{if(e.key==="Enter"||e.key===","){e.preventDefault();add(g("#f_g").value)}else if(e.key==="Backspace"&&!g("#f_g").value&&tags.length){tags=tags.slice(0,-1);draw()}};
+ g("#tg").onclick=e=>{const u=e.target.closest&&e.target.closest("u");if(u){tags=tags.filter((_,i)=>i!==+u.dataset.i);draw()}};
+ g("#tgs").onclick=e=>{const b=e.target.closest&&e.target.closest("[data-s]");if(b){add(b.dataset.s);g("#f_g").focus()}};
+ draw();
+ g("#f_a").oninput=e=>{const d=e.target.value.replace(/\D/g,"");e.target.value=d?rp(+d):""};
+ g("#no").onclick=close;ov.onclick=e=>{if(e.target===ov){close();return}const b=e.target.closest&&e.target.closest("[data-tip]");if(b){const x=g("#tip_"+b.dataset.tip);x.hidden=!x.hidden;b.setAttribute("aria-expanded",String(!x.hidden))}};
+ g("#ok").onclick=async()=>{const title=g("#f_t").value.trim(),amount=+g("#f_a").value.replace(/\D/g,""),date=g("#f_d").value;
+  if(!title||!amount||!date){g("#err").textContent="Please fill in what, how much, and the date.";return}
+  const now=new Date().toISOString();
+  await store.save({id:t?.id||"t"+Date.now().toString(36)+Math.random().toString(36).slice(2,6),title,amount,category:g("#f_c").value,tags:commit(),note:g("#f_n").value.trim(),date,createdAt:t?.createdAt||now,updatedAt:now});close()};
+ if(t)g("#del").onclick=()=>{g("#del").outerHTML='<p style="font-size:13px;margin:14px 0 0">Remove this spending? It is marked as deleted and stays in your Sheet, not erased.</p><button class="mb d" id="yes">Yes, delete</button>';g("#yes").onclick=async()=>{await store.del(t.id);close()}}}
+const SRC=["Salary","Business income","Freelance income","Other income"];
+const RK={inc:{t:"Income",f:[["source","Type","select"],["title","Label (optional)","text","October salary"],["amount","How much?","money"],["note","Note (optional)","text"],["date","Date","date"]]},
+ inv:{t:"Investment",f:[["asset","Asset","text","BTC"],["amount","Purchase amount","money"],["quantity","Quantity","num","0.06667"],["unitPrice","Purchase price per unit (optional)","money"],["note","Note (optional)","text"],["date","Purchase date","date"]]}};
+function openRec(k,id){const cf=RK[k],r=id?S[k].find(x=>x.id===id):null,ov=document.createElement("div");ov.className="back";
+ const inp=([n,l,t,ph])=>{const v=r?(r[n]??""):(t==="date"?todayStr():"");return`<label>${l}`+(t==="select"?`<select class="field" data-n="${n}">${SRC.map(x=>`<option ${r?.source===x?"selected":""}>${x}</option>`).join("")}</select>`:`<input class="field" data-n="${n}" data-t="${t}" ${t==="date"?'type="date"':'inputmode="'+(t==="text"?"text":"decimal")+'"'} placeholder="${esc(ph||"")}" value="${esc(t==="money"&&v?rp(v):v)}">`)+`</label>`};
+ ov.innerHTML=`<div class="modal"><h2>${r?"Edit ":"Add "}${cf.t}</h2>${cf.f.map(inp).join("")}<p id="err" style="color:#c0392b;font-size:13px;margin:10px 0 0"></p><button class="mb" id="ok">${r?"Save Changes":"Add "+cf.t}</button><button class="mb g" id="no">Cancel</button>${r?`<button class="mb d" id="del">Delete ${cf.t}</button>`:""}</div>`;
+ document.body.appendChild(ov);const q=s=>ov.querySelector(s),close=()=>ov.remove();
+ ov.querySelectorAll('[data-t="money"]').forEach(i=>i.oninput=e=>{const d=e.target.value.replace(/\D/g,"");e.target.value=d?rp(+d):""});
+ q("#no").onclick=close;ov.onclick=e=>{if(e.target===ov)close()};
+ q("#ok").onclick=async()=>{const v={};ov.querySelectorAll("[data-n]").forEach(i=>{v[i.dataset.n]=i.value.trim()});
+  const amount=+v.amount.replace(/\D/g,""),now=new Date().toISOString(),rec={id:r?.id||(k==="inc"?"inc_":"inv_")+Date.now().toString(36)+Math.random().toString(36).slice(2,5),createdAt:r?.createdAt||now,updatedAt:now,amount,note:v.note,date:v.date};
+  if(!amount||!v.date){q("#err").textContent="Please fill in the amount and date.";return}
+  if(k==="inc")Object.assign(rec,{source:v.source,title:v.title});
+  else{let qty=parseFloat(v.quantity.replace(",",".")),up=+v.unitPrice.replace(/\D/g,"");
+   if(!v.asset||!(qty>0||up>0)){q("#err").textContent="Please add the asset and a quantity or price per unit.";return}
+   if(!(qty>0))qty=amount/up;if(!up)up=Math.round(amount/qty);Object.assign(rec,{asset:v.asset.toUpperCase(),quantity:qty,unitPrice:up})}
+  await store.put(k,rec);close()};
+ if(r)q("#del").onclick=()=>{q("#del").outerHTML='<p style="font-size:13px;margin:14px 0 0">Remove this? It is marked as deleted and stays in your Sheet, not erased.</p><button class="mb d" id="yes">Yes, delete</button>';q("#yes").onclick=async()=>{await store.rm(k,r.id);close()}}}
+/* ---------- files ---------- */
+async function out(name,data){try{const d=await claude.use("downloads");if(d){await d.save({filename:name,data});return}}catch(e){}const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data]));a.download=name;a.click()}
+const csv=()=>"Date,Title,Amount,Category,Tags,Note\n"+byDate(S.tx).map(t=>[t.date,t.title,t.amount,t.category,tagsOf(t).join("; "),t.note].map(v=>`"${String(v??"").replace(/"/g,'""')}"`).join(",")).join("\n");
+/* ---------- events ---------- */
+document.addEventListener("click",e=>{if(brandTap(e.target))return;const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act,d=b.dataset;
+ if(a==="tab"||a==="go"){S.tab=d.t;render();scrollTo(0,0)}else if(a==="add")openForm();else if(a==="rec")openRec(d.k,d.id);else if(a==="tagq"){S.q=d.q;S.cat="All";S.fm="all";S.tab="tx";render();scrollTo(0,0)}else if(a==="start"){try{localStorage.setItem(IN,"1")}catch(e){}S.intro=false;S.force=false;render()}else if(a==="intro"){S.force=true;render();scrollTo(0,0)}else if(a==="unlock")doUnlock($("#lk").value);else if(a==="forgot"){S.forgot=true;render()}else if(a==="resetpin")resetPin();else if(a==="erase")eraseLocal();else if(a==="gs_save")gsSave();else if(a==="gs_ping")gsPing();else if(a==="gs_now"){S.syncErr="";flush()}else if(a==="gs_all")resendAll();else if(a==="gsopen"){S.tab="more";S.open.s=true;render();scrollTo(0,0)}else if(a==="lockpin"){S.locked=true;render()}else if(a==="offpin"){if(confirm("Turn off the PIN lock?")){LOCK=null;try{localStorage.removeItem(LK)}catch(e){}render()}}else if(a==="setpin"){const x=$("#pn1").value,y=$("#pn2").value;if(!/^\d{4,6}$/.test(x))alert("Please use 4 to 6 digits.");else if(x!==y)alert("The two PINs do not match.");else{setPin(x);render();alert("PIN set. spending spending will ask for it the next time you open it.")}}else if(a==="theme"){setTheme(d.v);render()}else if(a==="px"){const i=[...document.querySelectorAll("[data-px]")].find(x=>x.dataset.px===d.a),v=+i.value.replace(/\D/g,"");if(v)S.px[d.a]=v;else delete S.px[d.a];store.savePx()}else if(a==="edit")openForm(d.id);
+ else if(a==="cat"){S.cat=d.c;render()}else if(a==="tog"){S.open[d.k]=!S.open[d.k];render()}
+ else if(a==="backup"){out("spending-spending-backup-"+todayStr()+".json",JSON.stringify({app:"spending-spending",v:4,tx:D.tx,inc:D.inc,inv:D.inv,px:S.px},null,1));try{localStorage.setItem(BK,String(Date.now()))}catch(e){}setTimeout(render,500)}
+ else if(a==="csv")out("spending-spending-"+todayStr()+".csv",csv())});
+document.addEventListener("change",async e=>{const s=e.target;
+ if(s.dataset.sel){S[s.dataset.sel]=s.value;render()}
+ if(s.id==="rest"&&s.files[0]){try{const j=JSON.parse(await s.files[0].text()),have=new Set(D.tx.map(t=>t.id));let n=0;
+  for(const t of j.tx||[])if(t.id&&t.title&&t.amount&&t.date&&!have.has(t.id)){await store.save(t);n++}
+  for(const r of j.inc||[])if(r.id&&!D.inc.some(x=>x.id===r.id))await store.put("inc",r);for(const r of j.inv||[])if(r.id&&!D.inv.some(x=>x.id===r.id))await store.put("inv",r);S.px={...(j.px||{}),...S.px};await store.savePx();alert(n+" transactions restored.")}catch(x){alert("That file could not be read. Nothing was changed.")}}});
+document.addEventListener("input",e=>{if(e.target.id==="q"){S.q=e.target.value;render()}if(e.target.dataset.px!==undefined){const x=e.target.value.replace(/\D/g,"");e.target.value=x?rp(+x):""}});
+try{const v=localStorage.getItem(TH);if(v&&v!=="auto")document.documentElement.setAttribute("data-theme",v)}catch(e){}
+render();store.init();
+</script></body></html>
